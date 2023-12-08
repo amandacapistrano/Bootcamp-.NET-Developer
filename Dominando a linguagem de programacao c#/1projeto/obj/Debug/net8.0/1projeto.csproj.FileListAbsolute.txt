@@ -1,0 +1,14 @@
+C:\Users\amand\Desktop\bootcamp .net\Dominando a linguagem de programacao c#\1projeto\bin\Debug\net8.0\1projeto.exe
+C:\Users\amand\Desktop\bootcamp .net\Dominando a linguagem de programacao c#\1projeto\bin\Debug\net8.0\1projeto.deps.json
+C:\Users\amand\Desktop\bootcamp .net\Dominando a linguagem de programacao c#\1projeto\bin\Debug\net8.0\1projeto.runtimeconfig.json
+C:\Users\amand\Desktop\bootcamp .net\Dominando a linguagem de programacao c#\1projeto\bin\Debug\net8.0\1projeto.dll
+C:\Users\amand\Desktop\bootcamp .net\Dominando a linguagem de programacao c#\1projeto\bin\Debug\net8.0\1projeto.pdb
+C:\Users\amand\Desktop\bootcamp .net\Dominando a linguagem de programacao c#\1projeto\obj\Debug\net8.0\1projeto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amand\Desktop\bootcamp .net\Dominando a linguagem de programacao c#\1projeto\obj\Debug\net8.0\1projeto.AssemblyInfoInputs.cache
+C:\Users\amand\Desktop\bootcamp .net\Dominando a linguagem de programacao c#\1projeto\obj\Debug\net8.0\1projeto.AssemblyInfo.cs
+C:\Users\amand\Desktop\bootcamp .net\Dominando a linguagem de programacao c#\1projeto\obj\Debug\net8.0\1projeto.csproj.CoreCompileInputs.cache
+C:\Users\amand\Desktop\bootcamp .net\Dominando a linguagem de programacao c#\1projeto\obj\Debug\net8.0\1projeto.dll
+C:\Users\amand\Desktop\bootcamp .net\Dominando a linguagem de programacao c#\1projeto\obj\Debug\net8.0\refint\1projeto.dll
+C:\Users\amand\Desktop\bootcamp .net\Dominando a linguagem de programacao c#\1projeto\obj\Debug\net8.0\1projeto.pdb
+C:\Users\amand\Desktop\bootcamp .net\Dominando a linguagem de programacao c#\1projeto\obj\Debug\net8.0\1projeto.genruntimeconfig.cache
+C:\Users\amand\Desktop\bootcamp .net\Dominando a linguagem de programacao c#\1projeto\obj\Debug\net8.0\ref\1projeto.dll
