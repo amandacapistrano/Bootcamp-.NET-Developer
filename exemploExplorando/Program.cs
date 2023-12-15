@@ -19,12 +19,14 @@ string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
 
 }catch(DirectoryNotFoundException ex){
     
-    Console.WriteLine($"Ocorreu um erro na leitura. Caminho da pasta não ecnontrado {ex.Message}");
+    Console.WriteLine($"Ocorreu um erro na leitura. Caminho da pasta não encontrado {ex.Message}");
 //exceções genéricas:
 }catch(Exception ex){
     
     Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
 
+}finally{
+    Console.WriteLine("\nFinalizando tendo exceção ou não");
 }
 //
 
