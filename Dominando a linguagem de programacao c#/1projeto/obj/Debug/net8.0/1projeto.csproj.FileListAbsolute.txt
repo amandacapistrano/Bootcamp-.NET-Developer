@@ -12,3 +12,4 @@ C:\Users\amand\Desktop\bootcamp .net\Dominando a linguagem de programacao c#\1pr
 C:\Users\amand\Desktop\bootcamp .net\Dominando a linguagem de programacao c#\1projeto\obj\Debug\net8.0\1projeto.pdb
 C:\Users\amand\Desktop\bootcamp .net\Dominando a linguagem de programacao c#\1projeto\obj\Debug\net8.0\1projeto.genruntimeconfig.cache
 C:\Users\amand\Desktop\bootcamp .net\Dominando a linguagem de programacao c#\1projeto\obj\Debug\net8.0\ref\1projeto.dll
+C:\Users\amand\Desktop\bootcamp .net\Dominando a linguagem de programacao c#\1projeto\obj\Debug\net8.0\1projeto.sourcelink.json
