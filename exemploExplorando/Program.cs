@@ -4,31 +4,35 @@ using System.Globalization;
 using System.Reflection.Metadata;
 
 
-//LEITURA DE ARQUIVO:
-//e tratando exceçao
-try{
+new ExemploExcecoes().Metodo1();
 
-string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
-    foreach(string linha in linhas){
-        Console.WriteLine(linha);
-    }
-//exceções especificas:
-}catch(FileNotFoundException ex){
 
-    Console.WriteLine($"Ocorreu um erro na leitura. Arquivo não encontrado {ex.Message}");
 
-}catch(DirectoryNotFoundException ex){
+// //LEITURA DE ARQUIVO:
+// //e tratando exceçao
+// try{
+
+// string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+//     foreach(string linha in linhas){
+//         Console.WriteLine(linha);
+//     }
+// //exceções especificas:
+// }catch(FileNotFoundException ex){
+
+//     Console.WriteLine($"Ocorreu um erro na leitura. Arquivo não encontrado {ex.Message}");
+
+// }catch(DirectoryNotFoundException ex){
     
-    Console.WriteLine($"Ocorreu um erro na leitura. Caminho da pasta não encontrado {ex.Message}");
-//exceções genéricas:
-}catch(Exception ex){
+//     Console.WriteLine($"Ocorreu um erro na leitura. Caminho da pasta não encontrado {ex.Message}");
+// //exceções genéricas:
+// }catch(Exception ex){
     
-    Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
+//     Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
 
-}finally{
-    Console.WriteLine("\nFinalizando tendo exceção ou não");
-}
-//
+// }finally{
+//     Console.WriteLine("\nFinalizando tendo exceção ou não");
+// }
+// //
 
 
 
