@@ -4,32 +4,56 @@ using System.Globalization;
 using System.Reflection.Metadata;
 using System.Collections;
 
+//Coleções - Stack : Pilha:
+Stack<int> pilha = new Stack<int>();
+//add elementos na pilha:
+pilha.Push(10);
+pilha.Push(30);
+pilha.Push(50); //vai adicionando os elementos no topo da fila
+pilha.Push(100);
 
-//Coleções tipo fila:
-Queue<int> fila = new Queue<int>();
-//add itens na fila
-fila.Enqueue(2);
-fila.Enqueue(4);
-fila.Enqueue(6);// vai adicionando elementos no final da fila
-fila.Enqueue(8);
+foreach(int item in pilha){
+    Console.WriteLine(item);
+}
+//Remover elementos da pilha, sempre será removido do topo da pila
+Console.WriteLine($"Removendo o elmento {pilha.Pop()
+} do topo da pilha");
 
-foreach(int item in fila){
+foreach(int item in pilha){
     Console.WriteLine(item);
 }
 
-//remover itens da fila
-//fila.Dequeue(); //sempre remove o primeiro elemento da fila
-Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
-Console.WriteLine("Exibindo fila novamente: ");
-foreach(int item in fila){
+Console.WriteLine("Adicionando elemento no topo da pilha");
+pilha.Push(1);//add novo elemento
+foreach(int item in pilha){
     Console.WriteLine(item);
 }
-fila.Enqueue(10);
-Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
-Console.WriteLine("Exibindo fila novamente: ");
-foreach(int item in fila){
-    Console.WriteLine(item);
-}
+
+// //Coleções - QUEUE tipo fila:
+// Queue<int> fila = new Queue<int>();
+// //add itens na fila
+// fila.Enqueue(2);
+// fila.Enqueue(4);
+// fila.Enqueue(6);// vai adicionando elementos no final da fila
+// fila.Enqueue(8);
+
+// foreach(int item in fila){
+//     Console.WriteLine(item);
+// }
+
+// //remover itens da fila
+// //fila.Dequeue(); //sempre remove o primeiro elemento da fila
+// Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
+// Console.WriteLine("Exibindo fila novamente: ");
+// foreach(int item in fila){
+//     Console.WriteLine(item);
+// }
+// fila.Enqueue(10);
+// Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
+// Console.WriteLine("Exibindo fila novamente: ");
+// foreach(int item in fila){
+//     Console.WriteLine(item);
+// }
 
 
 //new ExemploExcecoes().Metodo1();
