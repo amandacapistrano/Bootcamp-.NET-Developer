@@ -2,9 +2,37 @@
 using exemploExplorando.Models;
 using System.Globalization;
 using System.Reflection.Metadata;
+using System.Collections;
 
 
-new ExemploExcecoes().Metodo1();
+//Coleções tipo fila:
+Queue<int> fila = new Queue<int>();
+//add itens na fila
+fila.Enqueue(2);
+fila.Enqueue(4);
+fila.Enqueue(6);// vai adicionando elementos no final da fila
+fila.Enqueue(8);
+
+foreach(int item in fila){
+    Console.WriteLine(item);
+}
+
+//remover itens da fila
+//fila.Dequeue(); //sempre remove o primeiro elemento da fila
+Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
+Console.WriteLine("Exibindo fila novamente: ");
+foreach(int item in fila){
+    Console.WriteLine(item);
+}
+fila.Enqueue(10);
+Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
+Console.WriteLine("Exibindo fila novamente: ");
+foreach(int item in fila){
+    Console.WriteLine(item);
+}
+
+
+//new ExemploExcecoes().Metodo1();
 
 
 
