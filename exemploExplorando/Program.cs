@@ -3,27 +3,65 @@ using exemploExplorando.Models;
 using System.Globalization;
 using System.Reflection.Metadata;
 
-//Data e hora DateTime:
-//DateTime data = DateTime.Now;
-//  Console.WriteLine(data);
+
+//LEITURA DE ARQUIVO:
+//e tratando exceçao
+try{
+
+string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+    foreach(string linha in linhas){
+        Console.WriteLine(linha);
+    }
+//exceções especificas:
+}catch(FileNotFoundException ex){
+
+    Console.WriteLine($"Ocorreu um erro na leitura. Arquivo não encontrado {ex.Message}");
+
+}catch(DirectoryNotFoundException ex){
+    
+    Console.WriteLine($"Ocorreu um erro na leitura. Caminho da pasta não ecnontrado {ex.Message}");
+//exceções genéricas:
+}catch(Exception ex){
+    
+    Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
+
+}
+//
 
 
-// //Console.WriteLine(data.ToString("dd/MMMM/yyyy HH:mm"));
-// Console.WriteLine(data.ToShortDateString()); //exibe só data
-// Console.WriteLine(data.ToShortTimeString()); //exibe só hora
 
-string dataString = "2022-13-17 18:00";
-///Validação da data
-bool sucess = DateTime.TryParseExact(dataString, "yyyy-MM-dd HH:mm", 
-                                        CultureInfo.InvariantCulture, 
-                                        DateTimeStyles.None, 
-                                        out DateTime data);
 
-//DateTime data = DateTime.Parse(dataString);
-if (sucess){
-    Console.WriteLine(data);
-}else
-    Console.WriteLine($"{dataString} não é uma data válida");
+
+
+
+
+
+
+
+
+
+
+// //Data e hora DateTime:
+// //DateTime data = DateTime.Now;
+// //  Console.WriteLine(data);
+
+
+// // //Console.WriteLine(data.ToString("dd/MMMM/yyyy HH:mm"));
+// // Console.WriteLine(data.ToShortDateString()); //exibe só data
+// // Console.WriteLine(data.ToShortTimeString()); //exibe só hora
+
+// string dataString = "2022-13-17 18:00";
+// ///Validação da data
+// bool sucess = DateTime.TryParseExact(dataString, "yyyy-MM-dd HH:mm", 
+//                                         CultureInfo.InvariantCulture, 
+//                                         DateTimeStyles.None, 
+//                                         out DateTime data);
+
+// //DateTime data = DateTime.Parse(dataString);
+// if (sucess){
+//     Console.WriteLine(data);
+// }else
+//     Console.WriteLine($"{dataString} não é uma data válida");
 
 
 
