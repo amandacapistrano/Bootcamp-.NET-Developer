@@ -4,30 +4,69 @@ using System.Globalization;
 using System.Reflection.Metadata;
 using System.Collections;
 
-//Coleções - Stack : Pilha:
-Stack<int> pilha = new Stack<int>();
-//add elementos na pilha:
-pilha.Push(10);
-pilha.Push(30);
-pilha.Push(50); //vai adicionando os elementos no topo da fila
-pilha.Push(100);
+//Dictionary
+//        <key-value> - a chave deve ser um valor único:
+Dictionary<string, string> estados = new Dictionary<string, string>();
+estados.Add("SP", "São Paulo");
+estados.Add("BA", "Bahia");
+estados.Add("MG", "Minas Gerais"); //add elementos
 
-foreach(int item in pilha){
-    Console.WriteLine(item);
-}
-//Remover elementos da pilha, sempre será removido do topo da pila
-Console.WriteLine($"Removendo o elmento {pilha.Pop()
-} do topo da pilha");
-
-foreach(int item in pilha){
-    Console.WriteLine(item);
+//foreach(KeyValuePair<string, string> item in estados) ou:
+Console.WriteLine("Elementos no dictionary:");
+foreach(var item in estados){
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
 }
 
-Console.WriteLine("Adicionando elemento no topo da pilha");
-pilha.Push(1);//add novo elemento
-foreach(int item in pilha){
-    Console.WriteLine(item);
+//Remover valores no dicionario:
+estados.Remove("BA"); //remove o item através da chave
+Console.WriteLine("Elementos no dictionary após remoção:");
+foreach(var item in estados){
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
 }
+
+//Alterar valor - value -(Não é possivel alterar chave)
+estados["SP"] = "Valor Alterado"; //passar chave como referencia para alterar o valor
+Console.WriteLine("Elementos no dictionary após alteração:");
+foreach(var item in estados){
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+}
+
+string chave = "SP";
+Console.WriteLine($"Verificando o elemento {chave}");
+if(estados.ContainsKey(chave)){
+    Console.WriteLine($"A chave {chave} existe no dicionário");
+}else{
+    Console.WriteLine($"A chave {chave} não existe no dicionário");
+}
+
+//OBTER VALOR DA CHAVE
+Console.WriteLine("Obtendo um valor do dicionário");
+Console.WriteLine(estados["SP"]);
+
+// //Coleções - Stack : Pilha:
+// Stack<int> pilha = new Stack<int>();
+// //add elementos na pilha:
+// pilha.Push(10);
+// pilha.Push(30);
+// pilha.Push(50); //vai adicionando os elementos no topo da fila
+// pilha.Push(100);
+
+// foreach(int item in pilha){
+//     Console.WriteLine(item);
+// }
+// //Remover elementos da pilha, sempre será removido do topo da pila
+// Console.WriteLine($"Removendo o elmento {pilha.Pop()
+// } do topo da pilha");
+
+// foreach(int item in pilha){
+//     Console.WriteLine(item);
+// }
+
+// Console.WriteLine("Adicionando elemento no topo da pilha");
+// pilha.Push(1);//add novo elemento
+// foreach(int item in pilha){
+//     Console.WriteLine(item);
+// }
 
 // //Coleções - QUEUE tipo fila:
 // Queue<int> fila = new Queue<int>();
