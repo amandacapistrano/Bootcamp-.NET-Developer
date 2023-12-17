@@ -7,6 +7,11 @@ namespace ExemploPOO.Models
 {
     public class Aluno : Pessoa //<-- HERANÇA
     {
+        public Aluno(string nome) : base(nome) //para atender o construtor da classe pai
+        {
+
+        }
+        
         public double Nota { get; set; }
 
        public override void Apresentar(){//POLIMORFISMO
