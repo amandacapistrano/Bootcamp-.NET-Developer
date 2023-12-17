@@ -1,4 +1,5 @@
 ﻿using ExemploPOO.Models;
+using ExemploPOO.Interfaces;
 
 // Pessoa p1 = new Pessoa();
 // p1.Nome = "Amanda";
@@ -38,6 +39,10 @@
 // a1.Apresentar();
 // Professor prof = new Professor(); // com o construtor vazio não é obrigado a passar o nome
 
-//CLASSE OBJECT
-Computador c = new Computador();
-Console.WriteLine(c.ToString());
+// //CLASSE OBJECT
+// Computador c = new Computador();
+// Console.WriteLine(c.ToString());
+
+//INTERFACE
+ICalculadora cal = new Calculadora();
+Console.WriteLine(cal.Somar(1,1));
