@@ -16,7 +16,7 @@ namespace ExemploPOO.Models
         }
         public decimal Salario { get; set; }
 
-        public sealed override void Apresentar(){ //POLIMORFISMO // O SEALED FAZ QUE CLASSES FILHAS NÃO POSSAM SOBRESCREVER O MÉTODO.
+        public /*sealed*/ override void Apresentar(){ //POLIMORFISMO // O SEALED FAZ QUE CLASSES FILHAS NÃO POSSAM SOBRESCREVER O MÉTODO.
             Console.WriteLine($" Sou professor, meu nome é {Nome} e meu salário é de: {Salario:C}");
         }
 

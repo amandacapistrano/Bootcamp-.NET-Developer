@@ -26,14 +26,18 @@
 // p1.Salario = 4000;
 // p1.Apresentar();
 
-//ABSTRAÇÃO:
-Corrente c = new Corrente();
-c.Creditar(500);
-c.ExibirSaldo();
+// //ABSTRAÇÃO:
+// Corrente c = new Corrente();
+// c.Creditar(500);
+// c.ExibirSaldo();
 
-//Construtor por herança:
-Pessoa p1 = new Pessoa("Amanda");
-Aluno a1 = new Aluno("Maria");
-p1.Apresentar();
-a1.Apresentar();
-Professor prof = new Professor(); // com o construtor vazio não é obrigado a passar o nome
+// //Construtor por herança:
+// Pessoa p1 = new Pessoa("Amanda");
+// Aluno a1 = new Aluno("Maria");
+// p1.Apresentar();
+// a1.Apresentar();
+// Professor prof = new Professor(); // com o construtor vazio não é obrigado a passar o nome
+
+//CLASSE OBJECT
+Computador c = new Computador();
+Console.WriteLine(c.ToString());
