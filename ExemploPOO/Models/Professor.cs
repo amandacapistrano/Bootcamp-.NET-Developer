@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ExemploPOO.Models
 {
-    public class Professor : Pessoa
+    public /*sealed*/ class Professor : Pessoa // sealed faz professor ser uma classe selada que não poder ser herdada
     {
         public Professor(){
             
@@ -16,7 +16,7 @@ namespace ExemploPOO.Models
         }
         public decimal Salario { get; set; }
 
-        public override void Apresentar(){ //POLIMORFISMO
+        public sealed override void Apresentar(){ //POLIMORFISMO // O SEALED FAZ QUE CLASSES FILHAS NÃO POSSAM SOBRESCREVER O MÉTODO.
             Console.WriteLine($" Sou professor, meu nome é {Nome} e meu salário é de: {Salario:C}");
         }
 
