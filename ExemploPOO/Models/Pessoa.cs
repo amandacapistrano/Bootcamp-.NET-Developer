@@ -11,7 +11,7 @@ namespace ExemploPOO.Models
 
         public int Idade { get; set; }
 
-        public void Apresentar(){
+        public virtual void Apresentar(){ // VITRUAL PARA Opolimorfismo
             Console.WriteLine($"Olá, meu nome é {Nome} e tenho {Idade} anos.");
         }
     }
