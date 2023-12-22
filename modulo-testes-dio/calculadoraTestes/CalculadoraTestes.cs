@@ -46,4 +46,20 @@ public class calculadoraTestes
         //assert
         Assert.True(resultado);
     }
+
+    //UTILIZANDO THEORY
+    [Theory]
+    [InlineData(2)]
+    [InlineData(4)]
+    [InlineData(6)]
+    [InlineData(8)]
+    [InlineData(10)]
+    public void DeveVerificarSeOsNumerosSaoParesERetornarTrue(int numero){
+        //arrange
+    
+        //act
+        bool resultado = _calc.Par(numero);
+        //Assert
+        Assert.True(resultado);
+    }
 }
