@@ -49,17 +49,18 @@ public class calculadoraTestes
 
     //UTILIZANDO THEORY
     [Theory]
-    [InlineData(2)]
-    [InlineData(4)]
-    [InlineData(6)]
-    [InlineData(8)]
-    [InlineData(10)]
-    public void DeveVerificarSeOsNumerosSaoParesERetornarTrue(int numero){
+    [InlineData(new int[] {2, 4, 6})]
+    [InlineData(new int[] {8, 10})]
+    // [InlineData(4)]
+    // [InlineData(6)]
+    // [InlineData(8)]
+    // [InlineData(10)]
+    public void DeveVerificarSeOsNumerosSaoParesERetornarTrue(int[] numeros){
         //arrange
     
         //act
-        bool resultado = _calc.Par(numero);
+        // bool resultado = _calc.Par(numeros);
         //Assert
-        Assert.True(resultado);
+        Assert.All(numeros, num => Assert.True(_calc.Par(num)));
     }
 }
